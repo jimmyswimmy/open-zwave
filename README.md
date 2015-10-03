@@ -1,5 +1,13 @@
-Open-ZWave Library
+Open-ZWave Library - without libudev
 ==================
+
+This is a modified branch of the OZW library which removes the requirement for libudev.  I created this branch for use with a Wink hub which uses a serial interface, and for which I didn't want to compile and deal with udev.  If you were getting all those errors related to not having libudev.h and don't need to support the hid usb interface, this might be useful. 
+
+It compiles fine using arm-none-linux-gnueabi-gcc, which is part of the ltib install for the Freescale imx28.
+
+The rest of this is from the OZW root.
+
+## Original OZW stuff 
 
 Our goal is to create free software library that interfaces with selected Z-Wave PC controllers, allowing anyone to create applications that manipulate and respond to devices on a Z-Wave network, without requiring in-depth knowledge of the Z-Wave protocol.
 
