@@ -83,7 +83,6 @@ namespace OpenZWave
 		{
 			ControllerInterface_Unknown = 0,
 			ControllerInterface_Serial,
-			ControllerInterface_Hid
 		};
 
 	//-----------------------------------------------------------------------------

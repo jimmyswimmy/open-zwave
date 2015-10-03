@@ -298,14 +298,7 @@ int main( int argc, char* argv[] )
 	{
 		port = argv[1];
 	}
-	if( strcasecmp( port.c_str(), "usb" ) == 0 )
-	{
-		Manager::Get()->AddDriver( "HID Controller", Driver::ControllerInterface_Hid );
-	}
-	else
-	{
-		Manager::Get()->AddDriver( port );
-	}
+	Manager::Get()->AddDriver( port );
 
 	// Now we just wait for either the AwakeNodesQueried or AllNodesQueried notification,
 	// then write out the config file.
